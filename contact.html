@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css"/>
+        <meta charset="UTF-8">
+        <title>Contact</title>
+        <link rel="shortcut icon" href="assets/images/MichaelHrivnak.png">
+    </head>
+    <body>
+        <section class="header-section">
+            <div class="header control-width">
+                <label class="name">Michael Hrivnak</label>
+                <ul ID="menu">
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a class="menu-active" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </section>  
+        <section class="control-width">
+            <div class="content-body">
+                <h2>Contact</h2>
+                <hr>
+                <form>
+                    <div class="input">
+                        <label class="input-title">Name</label>
+                        <input type="text" name="name" value="John Doe" onfocus="this.value=''">
+                    </div>
+                    <div class="input">
+                        <label class="input-title">Email</label>
+                        <input type="email" name="email" value="example@domain.com" onfocus="this.value=''">
+                    </div>
+                    <div class="input">
+                        <label class="input-title">Message</label>
+                        <textarea id="messageBox" name="message" onfocus="this.value=''"></textarea>
+                    </div>
+                    <input type="submit" class="btn submit" value="Submit">
+                </form>
+            </div>            
+        </section>
+        <!--Footer-->
+        <section class="sticky-footer">
+            <small>Copyright &copy; 2019 Michael Hrivnak</small>
+        </section>
+    </body>
+</html>

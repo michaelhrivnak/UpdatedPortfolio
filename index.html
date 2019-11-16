@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/output.css"/>
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css"/>
+        <meta charset="UTF-8">        
+        <title>Michael Hrivnak - Portfolio</title>
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="assets/images/MichaelHrivnak.png">
+    </head>
+    <body class="p-3">
+        <header>
+            <ul id="menu" class="fixed text-right pr-3 pl-5 list-none right-0">
+                <li><a href="#bio">BIO</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#resume">RESUME</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </header>
+        <main role="main">
+            <section id="intro" class="text-2xl tracking-widest">
+                <h1 class="-mb-1 pb-0">MICHAEL HRIVNAK</h1>
+                <h1 class="-my-1 py-0">FULL STACK DEVELOPER</h1>
+                <h1>TORONTO, ONTARIO</h1>
+            </section>
+            <section id="bio" class="text-2xl tracking-widest">
+                <h1>BIO</h1>
+                <hr>
+                <p>My path to web development has been a long and winding road that began as a child, learning Basic from floppy discs on my family's 486 machine.
+                    I strayed from this path many times over the years but have since found my way back in the last couple of years assisting on a web development
+                    project at my day job. Recently I've spent a lot of time thinking about User Interfaces and User Experience; the topic fascinates
+                    me and I aim to explore it in much more depth in the future.
+                </p>
+                <p>When I'm not at work drawing up floor plans I can usually be found playing the latest digital card game (right now its Magic: The Gathering Arena).
+                    For many years growing up I wanted to be a game developer but while game design and game systems interest me a great deal, I do not have the hands
+                    for art, which has lead me more to thinking about overall design principles and UX.
+                </p>
+                <p>
+                    When I have even more free time I love to explore the city and find new restaurants to try with my wife or even find a new and interesting recipe to try
+                    to make at home. I am always trying to add my own spin to a recipe, as I am constantly thinking about how to improve or alter things. This can lead
+                    to disastrous results though!
+                </p>                    
+            </section>
+            <section id="skills" class="text-2xl tracking-widest">
+                <h1>SKILLS</h1>
+                <hr>
+            </section>
+            <section id="portfolio" class="text-2xl tracking-widest">
+                <h1>FEATURED PROJECTS</h1>
+                <hr>
+                <ul id="portfolio-items">
+                    <li class="portfolio-item-wrapper">
+                        <img class="portfolio-image" src="https://michaelhrivnak.github.io/JobRocket/assets/images/JobRocketReadme.png">
+                        <a class="portfolio-name" href="https://michaelhrivnak.github.io/JobRocket/"><img class="logo" src="https://michaelhrivnak.github.io/JobRocket/assets/images/JobRocket.png">Job Rocket</a>
+                    </li>
+                    <li class="portfolio-item-wrapper">
+                        <img class="portfolio-image" src="https://michaelhrivnak.github.io/Password-Generator/Assets/PasswordGenerator.PNG">
+                        <a class="portfolio-name" href="https://michaelhrivnak.github.io/Password-Generator/">Password Generator</a>
+                    </li>
+                   
+                    <li class="portfolio-item-wrapper">
+                        <img class="portfolio-image" src="https://michaelhrivnak.github.io/Weather-Dashboard/assets/WeatherDashboard.PNG">
+                        <a class="portfolio-name" href="https://michaelhrivnak.github.io/Weather-Dashboard/">Weather Dashboard</a>
+                    </li>                    
+                </ul>   
+            </section>
+            <section id="resume" class="text-2xl tracking-widest">
+                <h1>RESUME</h1>
+                <hr>
+            </section>
+            <section id="contact" class="text-2xl tracking-widest">
+                <h1>CONTACT</h1>
+                <hr>
+                <form class="text-lg tracking-normal">
+                    <div class="input">
+                        <label class="input-title">NAME</label>
+                        <input type="text" name="name" value="John Doe" onfocus="this.value=''">
+                    </div>
+                    <div class="input">
+                        <label class="input-title">EMAIL</label>
+                        <input type="email" name="email" value="example@domain.com" onfocus="this.value=''">
+                    </div>
+                    <div class="input">
+                        <label class="input-title">MESSAGE</label>
+                        <textarea id="messageBox" name="message" onfocus="this.value=''"></textarea>
+                    </div>
+                    <input type="submit" class="btn submit" value="SUBMIT">
+                </form>
+            </section>        
+        </main>        
+        <script>
+        window.onload = function(){
+            
+            document.getElementsByTagName("main")[0].style.width = document.documentElement.offsetWidth - document.getElementById("menu").clientWidth+"px";
+        };
+        window.onresize = function(){
+            document.getElementsByTagName("main")[0].style.width = document.documentElement.offsetWidth - document.getElementById("menu").clientWidth+"px";
+        }
+        </script>
+    </body>
+</html>
