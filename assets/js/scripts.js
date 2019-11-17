@@ -18,10 +18,10 @@ function sendEmail() {
     }else{
          
         Email.send({
-        Host : 'smtp.gmail.com',
-        Username : gmailACC,
-        Password : gmailPW,
-        //SecureToken : secTokenb,
+        // Host : 'smtp.gmail.com',
+        // Username : gmailACC,
+        // Password : gmailPW,
+        SecureToken : secTokenb,
         To : gmailTO,
         From : fromAddress,
         Subject : `Message from ${fromName}`,
