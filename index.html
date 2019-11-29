@@ -161,14 +161,14 @@
                 <h1>CONTACT</h1>
                 <hr>
                 <div class="w-full flex pt-3">
-                    <form class="text-lg inline-block tracking-normal">
+                    <form class="text-lg inline-block tracking-normal" action="https://formspree.io/mwkpvwjv" method="POST">
                         <div class="input">
                             <label class="input-title">NAME</label>
                             <input id="contactName" type="text" name="name" value="John Doe" onfocus="this.value=''">
                         </div>
                         <div class="input">
                             <label class="input-title">EMAIL</label>
-                            <input id="emailAddress" type="email" name="email" value="example@domain.com" onfocus="this.value=''">
+                            <input id="emailAddress" type="email" name="_replyto" value="example@domain.com" onfocus="this.value=''">
                         </div>
                         <div class="input">
                             <label class="input-title">MESSAGE</label>
@@ -185,9 +185,7 @@
                     </div>
                 </div>
             </section>        
-        </main>
-        <script src="./assets/js/creds.js"></script>  
-        <script src="https://smtpjs.com/v3/smtp.js"></script>       
+        </main>       
         <script src="./assets/js/scripts.js"></script>
     </body>
 </html>
